@@ -1,0 +1,99 @@
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./wave.png);
+    background-size: 1000px 100px;
+}
+.wave-side{
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    transform: rotate(90deg);
+    width: 1000px;
+    height: 100px;
+    background: url(./wave.png);
+    background-size: 1000px 100px;
+}
+.wave.wave1{
+    animation: waves 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.wave.wave2{
+    animation: waves2 15s linear infinite;
+    z-index: 999;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.wave.wave3{
+    animation: waves 15s linear infinite  ;
+    z-index: 998;
+    opacity: .2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+
+
+.wave-side.wave4{
+    animation: waves 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.wave-side.wave5{
+    animation: waves2 15s linear infinite;
+    z-index: 999;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.wave-side.wave6{
+    animation: waves 15s linear infinite  ;
+    z-index: 998;
+    opacity: .2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+
+@keyframes waves {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes waves2 {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+
+}
+@keyframes waves3 {
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y: 1000px;
+    }
+}
+@keyframes waves4 {
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y: -1000px;
+    }
+}
