@@ -18,7 +18,7 @@ export default makeStyles(theme=>({
     title:{},
     item:{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center'
     },
     itemImage:{

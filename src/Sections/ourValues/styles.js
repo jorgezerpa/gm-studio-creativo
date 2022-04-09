@@ -33,7 +33,7 @@ export default makeStyles(theme=>({
     },
     item:{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         zIndex: '11',
     },

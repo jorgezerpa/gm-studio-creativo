@@ -15,13 +15,16 @@ export default makeStyles(theme=>({
     },
     title:{
         padding: '40px',
+        width: '100%',
+        textAlign: 'center'
     },
     card:{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'column',
         border: '3px solid '+ theme.palette.secondary.main,
+        minHeight: '400px',
         // #1ED7ED pass to rgba and add opacity
     },
     cardMedia:{
